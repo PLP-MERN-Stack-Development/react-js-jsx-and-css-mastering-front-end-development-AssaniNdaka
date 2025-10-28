@@ -72,11 +72,9 @@ src/
 ├── utils/           # Utility functions
 └── App.jsx          # Main application component
 
-
 ## Deployment
 
-The live version of this React.js and Tailwind CSS assignment can be accessed here:  
-[React.js & Tailwind CSS Assignment Live Site](https://react-js-jsx-and-css-mastering-front-end-development-iz23u4po4.vercel.app)
+[🔗 Live Demo: React.js & Tailwind CSS Assignment](https://react-js-jsx-and-css-mastering-front-end-development-iz23u4po4.vercel.app)
 
 
 ## Submission
