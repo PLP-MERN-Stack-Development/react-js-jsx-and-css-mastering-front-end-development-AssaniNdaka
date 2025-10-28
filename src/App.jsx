@@ -1,30 +1,19 @@
-// src/App.jsx
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import TaskManager from './components/TaskManager'; // Tasks page
+import React from "react";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
   return (
-    <Router>
-      <div className={`${darkMode ? 'dark' : ''} min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100`}>
-        <Navbar />
-
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/tasks" element={<TaskManager />} />
-          </Routes>
-        </main>
-
-        <Footer />
-      </div>
-    </Router>
+    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-blue-700 text-white flex flex-col items-center justify-center text-center">
+      <h1 className="text-5xl font-bold mb-4">Welcome to My Front-End Journey</h1>
+      <p className="text-lg mb-6 max-w-xl">
+        This React + Tailwind project is my step into mastering modern front-end development.
+      </p>
+      <button className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
+        Get Started
+      </button>
+      <footer className="absolute bottom-4 text-sm opacity-75">
+        © 2025 Assani Ndaka — Powered by React & Tailwind CSS
+      </footer>
+    </div>
   );
 }
 
